@@ -12,6 +12,14 @@ pref("browser.urlbar.suggest.searches", false);
 // Disable first run TAB (i.e. the one pointing to firefx web site)
 pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 
+// Reuse same tab
+pref("browser.link.open_newwindow",1);
+
+// Disable multi processes
+pref("browser.tabs.remote.autostart",false);
+pref("dom.ipc.processCount",1);
+
+
 // Disable detect portal
 // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
 pref("network.captive-portal-service.enabled", false);
@@ -63,4 +71,3 @@ pref("browser.safebrowsing.provider.mozilla.lists.content", "moz-full");
 
 pref("media.gmp-manager.url", "");
 pref("datareporting.policy.dataSubmissionEnabled", false);
-pref("datareporting.healthreport.uploadEnabled", false);
